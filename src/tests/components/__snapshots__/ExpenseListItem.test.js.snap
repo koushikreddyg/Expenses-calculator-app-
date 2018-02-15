@@ -4,16 +4,16 @@ exports[`should render ExpenseListItem correctly 1`] = `
 <div>
   <Link
     replace={false}
-    to="/edit/1"
+    to="/edit/3"
   >
     <h3>
-      Gum
+      Credit Card
     </h3>
   </Link>
   <p>
-    195
+    4500
      - 
-    0
+    345600000
   </p>
 </div>
 `;
