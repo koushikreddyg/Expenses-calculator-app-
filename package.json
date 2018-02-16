@@ -53,6 +53,6 @@
     "babel-plugin-transform-class-properties": "^6.24.1"
   },
   "engines": {
-    "node": "8.9.4"
+    "node": "9.4.0"
   }
 }
