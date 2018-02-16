@@ -1,6 +1,7 @@
 {
   "name": "expensify",
   "version": "1.0.0",
+  "node": "v8.9.3",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
