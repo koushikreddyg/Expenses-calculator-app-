@@ -7,7 +7,7 @@ const config = {
     storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
     messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID
   };
-
+const googleAuthProvider=new firebase.auth.GoogleAuthProvider();
 firebase.initializeApp(config);
 const database=firebase.database();
 
@@ -32,7 +32,7 @@ const database=firebase.database();
 //     note:'water bill',
 //     createdAt:1000,
 // })
- export {firebase, database as default};
+ export {firebase, googleAuthProvider, database as default};
 // database.ref('expenses').once('value').then((snapshot)=>{
 //     const expenses=[];
 //     snapshot.forEach((childSnapshot) => {
