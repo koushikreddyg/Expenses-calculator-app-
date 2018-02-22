@@ -35,7 +35,7 @@ firebase.auth().onAuthStateChanged((user)=>{
   if(user){
     console.log('uid', user.uid)
     store.dispatch(login(user.uid))
-    store.dispatch(startSetExpenses()).then((done)=>{
+    store.dispatch(startSetExpenses()).then(()=>{
       //ReactDOM.render(jsx, document.getElementById('app'));
       renderApp();
       if(history.location.pathname==='/'){
@@ -44,8 +44,9 @@ firebase.auth().onAuthStateChanged((user)=>{
      
     })
   } else {
-    renderApp();
+    store.dispatch(logout());
     history.push('/')
+    renderApp();
   }
 })
 
